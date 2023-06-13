@@ -9,12 +9,12 @@ coverage
 *.gz
 
 .parcel-cache
-dist
+
 pids
 logs
 results
 
-node_modules
+
 npm-debug.log
 
 .idea
