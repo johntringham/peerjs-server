@@ -1,4 +1,8 @@
 FROM docker.io/library/node:18.16.0-alpine as production
-ENV PORT 9000
+RUN mkdir /app
+WORKDIR /app
+COPY . ./
+ENV PORT 8000
 EXPOSE ${PORT}
-ENTRYPOINT ["node", "./dist/peerjs.js"]
+#ENTRYPOINT ["node", "./dist/peerjs.js"]
+CMD ["npm", "start"]
